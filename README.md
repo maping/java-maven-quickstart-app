@@ -25,7 +25,7 @@ $ git push -u origin main
 
 ## 2. Modify pom.xml
 
-### 2.1 增加 java compile 版本设定
+### 2.1 增加源代码编码和 java compile 版本属性设定
 ```code
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
