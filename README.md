@@ -74,3 +74,5 @@ $ mvn clean package
 $ java -jar target/quickstartapp-1.0-SNAPSHOT.jar
 Hello World!
 ```
+
+恭喜你，你已经成功构建了一个 Java 应用！
