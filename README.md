@@ -65,7 +65,7 @@ $ git push -u origin main
 ```
 
 ### 2.3 修改所有的依赖包到最新的 Release 版本
-访问 https://repository.sonatype.org/，查找每个依赖的最新的 Release 版本 (2022-11-17 更新)
+访问 https://repository.sonatype.org 查找每个依赖的最新的 Release 版本 (2022-11-17 更新)
 
 ## 3. Compile and run application
 ```console
