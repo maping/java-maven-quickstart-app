@@ -179,7 +179,6 @@ $ mvn release:perform
 ...Uploaded to quickstart-release: http://localhost:8081/repository/maven-quickstart-release/xyz/javaneverdie/quickstart/quickstartapp/1.0/quickstartapp-1.0-javadoc.jar (403 kB at 3.9 MB/s)
 ...
 ```
-正式发布成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-release Repo 中有刚刚部署成功的 quickstartapp-1.0。
+发布成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-release Repo 中有刚刚部署成功的 quickstartapp-1.0。
 
-不仅项目的主构件会被生成并且发布到仓库中，基于该主构件的 -source.jar 和 -javadoc.jar 也一并生成了。
-
+不仅项目的主构件会被生成并且发布到仓库中，基于该主构件的 -source.jar 和 -javadoc.jar 也一并生成了，这真是太方便了！
