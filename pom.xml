@@ -5,7 +5,7 @@
   <artifactId>quickstartapp</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>A Java Quickstart App </name>
+  <name>A Java Maven Quickstart App </name>
   <url>http://maven.apache.org</url>
 
   <properties>
