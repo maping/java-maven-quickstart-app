@@ -163,6 +163,7 @@ Maven 会根据 pom.xml 文件中的版本号中是否带有 -SNAPSHOT（必须�
 
 >温馨提示：执行 `git push` 后，请再执行一次 `git pull` 确保本地和 github 代码仓库完全一致
 
+执行 `mvn release:prepare` 进行发布前准备
 ```console
 $ mvn release:prepare
 ...
@@ -171,6 +172,7 @@ What is SCM release tag or label for "java-maven-quickstart-app"? (xyz.javanever
 What is the new development version for "java-maven-quickstart-app"? (xyz.javaneverdie.quickstart.quickstartapp) 1.1-SNAPSHOT: :
 ...
 ```
+执行 `mvn release:perform` 签出代码，执行`mvn release:perform`构建新版本，并部署到仓库中
 ```console
 $ mvn release:perform
 ...
@@ -179,5 +181,5 @@ $ mvn release:perform
 ```
 正式发布成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-release Repo 中有刚刚部署成功的 quickstartapp-1.0。
 
-不仅项目的主构件会被生成并且发布到仓库中，
+不仅项目的主构件会被生成并且发布到仓库中，基于该主构件的 -source.jar 和 -javadoc.jar 也一并生成了。
 
