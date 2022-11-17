@@ -88,7 +88,7 @@ Hello World!
 ## 4.3 修改 pom.xml
 添加 distributionManagement 元素
 ```code
- <distributionManagement>
+  <distributionManagement>
     <repository>
       <id>quickstart-snapshot</id>
       <name>A Java Maven Quickstart Releases Repository</name>
@@ -105,7 +105,7 @@ Hello World!
 ## 4.4 修改 ~/.m2/settings.xml
 添加 distributionManagement 元素
 ```code
-   <server>
+    <server>
       <id>quickstart-releases</id>
       <username>admin</username>
       <password>admin123</password>
@@ -117,3 +117,7 @@ Hello World!
       <password>admin123</password>
     </server>
 ```
+
+## 4.5 部署项目
+quickstart 修改 ~/.m2/settings.xml
+
