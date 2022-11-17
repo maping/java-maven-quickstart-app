@@ -172,7 +172,7 @@ What is SCM release tag or label for "java-maven-quickstart-app"? (xyz.javanever
 What is the new development version for "java-maven-quickstart-app"? (xyz.javaneverdie.quickstart.quickstartapp) 1.1-SNAPSHOT: :
 ...
 ```
->说明：SCM release tag 会打到 github 仓库上。
+>说明：SCM release tag 会打到 github 仓库的 Tags 上。
 
 执行 `mvn release:perform` 签出代码，执行`mvn release:perform`构建新版本，并部署到仓库中
 ```console
