@@ -7,7 +7,7 @@ Click "Repositories",then click "New" button,input "java-maven-quickstart-app", 
 
 ### 1.2 Create a Java helloword app by Maven
 ```console
-$ cd Code
+$ cd code
 $ mvn archetype:generate -DgroupId=xyz.javaneverdie.quickstart -DartifactId=quickstartapp -DarchetypeArtifactId=maven-archetype-quickstart -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
 ```
 
