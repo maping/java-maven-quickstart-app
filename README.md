@@ -33,7 +33,7 @@ $ git push -u origin main
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
 ```
->注意：java compiler 版本要与实际使用的 JDK 保持一致。
+>重要：java compiler 版本要与实际使用的 JDK 保持一致。
 
 ### 2.2 增加 maven-shade-plugin 
 由于程序是有 main 方法的，默认打成的 jar 包，是不能直接运行的。需要把 main 方法的信息需要写入到 jar 文件中的 META-INF/MANIFEST.MF 文件，所以需要使用 maven-shade-plugin。
