@@ -74,8 +74,7 @@ $ mvn clean package
 $ java -jar target/quickstartapp-1.0-SNAPSHOT.jar
 Hello World!
 ```
-
-恭喜你，你已经成功构建了一个 Java 应用！
+恭喜，你已经成功构建了一个 Java 应用！
 
 ## 4. 部署项目到 Nexus 仓库
 
@@ -130,6 +129,8 @@ Maven 会根据 pom.xml 文件中的版本号中是否带有 -SNAPSHOT（必须�
 - 如果是正式版本，在 mvn deploy 时会自动发布到快照版本库中；使用正式版本的模块，在不更改版本号的情况下，编译打包时，如果本地已经存在该版本的模块，则使用本地的而不会主动去仓库服务器上下载。
 
 提示部署成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-snapshot 仓库中有刚刚部署成功的 quickstartapp-1.0-SNAPSHOT。
+
+恭喜，你已经成功部署了一个 Java 应用！
 
 ## 5. 发布正式版
 
@@ -207,4 +208,4 @@ $ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
-
+恭喜，你已经成功发版了一个 Java 应用！
