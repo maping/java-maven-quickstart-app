@@ -182,3 +182,7 @@ $ mvn release:perform
 发布成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-release Repo 中有刚刚部署成功的 quickstartapp-1.0。
 
 不仅项目的主构件会被生成并且发布到仓库中，基于该主构件的 -source.jar 和 -javadoc.jar 也一并生成了，这真是太方便了！
+
+查看本地和 github 仓库中的 pom.xml 文件，发现 version 都改为 1.1-SNAPSHOT 了。
+
+查看 github 仓库的 Tags，发现有一个新的 Tag：quickstartapp-1.0，点击该 Tag 右边的 ...，可以依此 Tag 创建 Release。
