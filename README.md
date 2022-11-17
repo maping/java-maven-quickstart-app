@@ -131,4 +131,12 @@ Maven 会根据 pom.xml 文件中的版本号中是否带有 -SNAPSHOT（必须�
 
 提示部署成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-snapshot Repo 中有刚刚部署成功的 quickstartapp。
 
+## 5. 发布正式版
+发布正式版的条件：
+- 所有自动化测试通过
+- 项目没有配置任何快照版本的依赖
+- 项目没有配置任何快照版本的插件
+- 项目源代码已经全部提交到代码仓库
+
+
 
