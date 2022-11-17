@@ -191,3 +191,20 @@ $ mvn release:perform
 查看 github 仓库的 Tags，发现有一个新的 Tag：quickstartapp-1.0，点击该 Tag 右边的 ...，可以依此 Tag 创建 Release，Title 输入 1.0，把 jar 文件上传。
 
 ### 5.5 根据 Tag 创建 Branch
+```console
+$ cd quickstartapp
+$ git checkout -b release/1.0 quickstartapp-1.0
+Switched to a new branch 'release/1.0'
+$ git push origin release/1.0:release/1.0
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'release/1.0' on GitHub by visiting:
+remote:      https://github.com/maping/java-maven-quickstart-app/pull/new/release/1.0
+remote:
+To https://github.com/maping/java-maven-quickstart-app.git
+ * [new branch]      release/1.0 -> release/1.0
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+
