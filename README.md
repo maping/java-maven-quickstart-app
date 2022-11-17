@@ -90,7 +90,7 @@ Hello World!
 ```code
   <distributionManagement>
     <repository>
-      <id>quickstart-snapshot</id>
+      <id>quickstart-release</id>
       <name>A Java Maven Quickstart Releases Repository</name>
       <url>http://localhost:8081/repository/maven-quickstart-release/</url>
     </repository>
@@ -103,7 +103,7 @@ Hello World!
 ```
 
 ## 4.4 修改 ~/.m2/settings.xml
-添加 distributionManagement 元素
+添加 server 元素
 ```code
     <server>
       <id>quickstart-releases</id>
@@ -117,7 +117,14 @@ Hello World!
       <password>admin123</password>
     </server>
 ```
+>重要：server 中的 id 值必须要和 distributionManagement 中的 repository 中的 id 值一致。
 
 ## 4.5 部署项目
-quickstart 修改 ~/.m2/settings.xml
+```console
+$ cd quickstartapp
+$ mvn clean package
+$ mvn deploy
+```
+提示部署成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-snapshot Repo 中有刚刚部署成功的 quickstartapp。
+
 
