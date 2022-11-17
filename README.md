@@ -76,3 +76,44 @@ Hello World!
 ```
 
 恭喜你，你已经成功构建了一个 Java 应用！
+
+## 4. 部署项目到 Nexus 仓库
+
+### 4.1 安装并配置好 Nexus 私有仓库
+
+### 4.2 在 Nexus 中创建 Hosted 类型仓库
+- 创建 maven-quickstart-release 仓库
+- 创建 maven-quickstart-snapshot 仓库
+
+## 4.3 修改 pom.xml
+添加 distributionManagement 元素
+```code
+ <distributionManagement>
+    <repository>
+      <id>quickstart-snapshot</id>
+      <name>A Java Maven Quickstart Releases Repository</name>
+      <url>http://localhost:8081/repository/maven-quickstart-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>quickstart-snapshot</id>
+      <name>A Java Maven Quickstart Snapshots Repository</name>
+      <url>http://localhost:8081/repository/maven-quickstart-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
+```
+
+## 4.4 修改 ~/.m2/settings.xml
+添加 distributionManagement 元素
+```code
+   <server>
+      <id>quickstart-releases</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+
+    <server>
+      <id>quickstart-snapshot</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+```
