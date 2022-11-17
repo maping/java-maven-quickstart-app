@@ -23,6 +23,19 @@
     </dependency>
   </dependencies>
 
+ <distributionManagement>
+    <repository>
+      <id>quickstart-release</id>
+      <name>A Java Maven Quickstart Releases Repository</name>
+      <url>http://localhost:8081/repository/maven-quickstart-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>quickstart-snapshot</id>
+      <name>A Java Maven Quickstart Snapshots Repository</name>
+      <url>http://localhost:8081/repository/maven-quickstart-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <build>
     <plugins>
       <plugin>
@@ -47,4 +60,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>
