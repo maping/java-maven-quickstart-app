@@ -126,10 +126,10 @@ $ mvn clean package
 $ mvn deploy
 ```
 Maven 会根据 pom.xml 文件中的版本号中是否带有 -SNAPSHOT（必须全部大写）来判断这个是快照版本还是正式版本。
-- 如果是快照版本，在 mvn deploy 时会自动发布到快照版本库中；使用快照版本的模块，在不更改版本号的情况下，直接编译打包时，Maven 会自动从仓库服务器上下载最新的快照版本。
-- 如果是正式版本，在 mvn deploy 时会自动发布到快照版本库中；
+- 如果是快照版本，在 mvn deploy 时会自动发布到快照版本库中；使用快照版本的模块，在不更改版本号的情况下，编译打包时，Maven 会自动从仓库服务器上下载最新的快照版本。
+- 如果是正式版本，在 mvn deploy 时会自动发布到快照版本库中；使用正式版本的模块，在不更改版本号的情况下，编译打包时，如果本地已经存在该版本的模块，则使用本地的而不会主动去仓库服务器上下载。
 
-提示部署成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-snapshot Repo 中有刚刚部署成功的 quickstartapp-1.0-SNAPSHOT。
+提示部署成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-snapshot 仓库中有刚刚部署成功的 quickstartapp-1.0-SNAPSHOT。
 
 ## 5. 发布正式版
 
@@ -181,7 +181,7 @@ $ mvn release:perform
 ...Uploaded to quickstart-release: http://localhost:8081/repository/maven-quickstart-release/xyz/javaneverdie/quickstart/quickstartapp/1.0/quickstartapp-1.0-javadoc.jar (403 kB at 3.9 MB/s)
 ...
 ```
-发布成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-release Repo 中有刚刚部署成功的 quickstartapp-1.0。
+发布成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-release 仓库中有刚刚部署成功的 quickstartapp-1.0。
 
 不仅项目的主构件会被生成并且发布到仓库中，基于该主构件的 -source.jar 和 -javadoc.jar 也一并生成了，这真是太方便了！
 
