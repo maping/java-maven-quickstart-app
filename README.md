@@ -185,4 +185,4 @@ $ mvn release:perform
 
 查看本地和 github 仓库中的 pom.xml 文件，发现 version 都改为 1.1-SNAPSHOT 了。
 
-查看 github 仓库的 Tags，发现有一个新的 Tag：quickstartapp-1.0，点击该 Tag 右边的 ...，可以依此 Tag 创建 Release。
+查看 github 仓库的 Tags，发现有一个新的 Tag：quickstartapp-1.0，点击该 Tag 右边的 ...，可以依此 Tag 创建 Release，也跟可以一次 Tag 创建 Branch。
