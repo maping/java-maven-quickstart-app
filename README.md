@@ -132,11 +132,35 @@ Maven 会根据 pom.xml 文件中的版本号中是否带有 -SNAPSHOT（必须�
 提示部署成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-snapshot Repo 中有刚刚部署成功的 quickstartapp。
 
 ## 5. 发布正式版
-发布正式版的条件：
+
+### 5.1 修改 pom.xml，增加 scm 元素
+```code
+  <scm>
+    <connection>scm:git:https://github.com/maping/java-maven-quickstart-app.git</connection>
+    <developerConnection>scm:git:https://github.com/maping/java-maven-quickstart-app.git</developerConnection>
+    <url>https://github.com/maping/java-maven-quickstart-app.git</url>
+    <tag>HEAD</tag>
+  </scm>
+```
+### 5.2 修改 pom.xml，增加 maven-release-plugin 元素
+```code
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+        <configuration>
+          <tagBase>https://github.com/maping/java-maven-quickstart-app.git</tagBase>
+          <branchBase>https://github.com/maping/java-maven-quickstart-app.git</branchBase>
+        </configuration>
+      </plugin>
+```
+### 5.3 正式发布
+>重要：发布正式版的条件：
 - 所有自动化测试通过
 - 项目没有配置任何快照版本的依赖
 - 项目没有配置任何快照版本的插件
 - 项目源代码已经全部提交到代码仓库
+
 
 
 
