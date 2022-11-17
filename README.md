@@ -61,7 +61,7 @@ $ git push -u origin main
         </executions>
       </plugin>
     </plugins>
-  </build>
+</build>
 ```
 
 ### 2.3 修改所有的依赖包到最新的 Release 版本
