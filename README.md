@@ -168,10 +168,12 @@ Maven 会根据 pom.xml 文件中的版本号中是否带有 -SNAPSHOT（必须�
 $ mvn release:prepare
 ...
 What is the release version for "java-maven-quickstart-app"? (xyz.javaneverdie.quickstart.quickstartapp) 1.0: :
-What is SCM release tag or label for "java-maven-quickstart-app"? (xyz.javaneverdie.quickstart.quickstartapp) quickstartapp-1.0: : 1.0
+What is SCM release tag or label for "java-maven-quickstart-app"? (xyz.javaneverdie.quickstart.quickstartapp) quickstartapp-1.0: : 
 What is the new development version for "java-maven-quickstart-app"? (xyz.javaneverdie.quickstart.quickstartapp) 1.1-SNAPSHOT: :
 ...
 ```
+>说明：SCM release tag 会打到 github 仓库上。
+
 执行 `mvn release:perform` 签出代码，执行`mvn release:perform`构建新版本，并部署到仓库中
 ```console
 $ mvn release:perform
