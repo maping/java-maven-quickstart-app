@@ -185,10 +185,10 @@ $ mvn release:perform
 
 不仅项目的主构件会被生成并且发布到仓库中，基于该主构件的 -source.jar 和 -javadoc.jar 也一并生成了，这真是太方便了！
 
-查看本地和 github 仓库中的 pom.xml 文件，发现 version 都改为 1.1-SNAPSHOT 了。
+查看本地和 github 仓库中的 pom.xml 文件，发现 version 都自动改为 1.1-SNAPSHOT 了。
 
 ### 5.4 根据 Tag 创建 Release
-查看 github 仓库的 Tags，发现有一个新的 Tag：quickstartapp-1.0，点击该 Tag 右边的 ...，可以依此 Tag 创建 Release，Title 输入 1.0，把 jar 文件上传。
+查看 github 仓库的 Tags，发现有一个新的 Tag：quickstartapp-1.0，点击该 Tag 右边的 ...，可以依此 Tag 创建 Release，Title 输入 1.0，把三个 jar 文件上传。
 
 ### 5.5 根据 Tag 创建 Branch
 ```console
