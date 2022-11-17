@@ -179,5 +179,5 @@ $ mvn release:perform
 ```
 正式发布成功后，访问 http://localhost:8081/ ，搜索 quickstart，会发现在 maven-quickstart-release Repo 中有刚刚部署成功的 quickstartapp-1.0。
 
-
+不仅项目的主构件会被生成并且发布到仓库中，
 
