@@ -209,3 +209,11 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
 恭喜，你已经成功发版了一个 Java 应用！
+
+## 6. 部署到 Github Packages
+Github 也推出了 Packages 功能，Public Repo 可以免费使用。
+
+TODO
+
+## 参考
+- [How to use Github Packages with Maven Java Project and Utilize it (With Examples Before & after)](https://www.youtube.com/watch?v=MhzoxE7NdpI)
